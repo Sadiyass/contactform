@@ -1,0 +1,54 @@
+<html lang="en">
+<head>
+    <title>Contact form</title>
+    <link rel="javascript" href="contact-form.js">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./js/bootstrap.min.js">
+    <style>
+
+        div {
+            margin: 15px;
+        }
+    </style>
+    <script>
+          
+    </script>
+</head>
+<body>
+    
+        <form name="myform" onsubmit="return validateform()" class="container">
+            <h2 class="">Contact Form</h2>
+
+            <div>
+                <label for="name">First Name:</label>
+                <input type="text" name="firstName"  placeholder="First Name *" onkeypress=" return validateform()" class="shadow form-control font-italic" required>
+                </div>
+
+                <div>
+                    <label for="Surname">Surname:</label>
+                    <input type="text" name="name" placeholder="Surname *"  onkeypress=" return validateform()" class="shadow form-control font-italic" required>
+                </div>
+                
+                <div>
+                    <label for="Other-name">Other Names:</label>
+                    <input type="text" name="other name" placeholder="Other Names" class="shadow form-control font-italic">
+                </div>    
+                    
+                <div>
+                    <label for="Subject">Subject:</label>
+                    <input type="text" name="subject" placeholder=" Subject* "  onkeypress=" return validateform()" class="shadow form-control font-italic" required>
+                </div>
+                    
+                <div>
+                    <label for="message">Message:</label><br/>
+                    <textarea name="message" cols="30" rows="5" placeholder="Message *"  onkeypress=" return validateform()" class="shadow form-control font-italic" required></textarea>
+                </div>
+                    
+                <div>
+                    <button type="submit" onsubmit="return validateform()" class="btn btn-success col-md-3">Submit</button>
+                </div>
+            
+                </form>     
+    
+</body>
+</html>
